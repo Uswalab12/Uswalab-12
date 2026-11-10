@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact and Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Contact Us & Book a Table</h1>
+    <p>We would love to welcome you!</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="famous.html">Famous Items</a>
+    <a href="contact.html">Contact & Booking</a>
+</nav>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Contact Information</h2>
+
+        <p><b>Address:</b> Islamabad, Pakistan</p>
+
+        <p><b>Opening Hours:</b> 10:00 AM - 11:00 PM</p>
+
+        <p><b>Visit Us:</b> We are waiting to serve you!</p>
+    </div>
+
+    <div class="card">
+
+        <h2>Book Your Table</h2>
+
+        <form onsubmit="bookingConfirm(event)">
+
+            <label>Your Name:</label>
+            <input type="text" id="name"
+                   placeholder="Enter your name" required>
+
+            <label>Phone Number:</label>
+            <input type="tel" id="phone"
+                   placeholder="Enter your phone number" required>
+
+            <label>Booking Date:</label>
+            <input type="date" id="date" required>
+
+            <label>Booking Time:</label>
+            <input type="time" id="time" required>
+
+            <label>Number of Guests:</label>
+            <select id="guests" required>
+                <option value="">Select guests</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+            </select>
+
+            <label>Special Request:</label>
+            <textarea id="message"
+                      placeholder="Any special request?"></textarea>
+
+            <button type="submit">Confirm Booking</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Thank you for choosing our cafe!</p>
+</footer>
+
+<script>
+
+function bookingConfirm(event) {
+
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+
+    alert("Thank you " + name +
+          "! Your booking request has been received.");
+
+}
+
+</script>
+
+</body>
+</html>

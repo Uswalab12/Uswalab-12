@@ -1,53 +1,86 @@
 <!-- Uswa Fatima
 26i3046
 SE_A -->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Our Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<link rel="stylesheet" href="style.css">
-<body style="background-color:powderblue;"></body>
-    
-<h1>Cafe Menu</h1>
-<img src="C:\Users\i263046\Desktop\26i3046_SEA_lab11\picture folder\Screenshot 2026-11-03 104007.png" width="100">
-<table>
 
-   
-  <tr>
-    <th>Dishes</th>
-    <th>Price</th>
-  </tr>
-  <tr>
-    <td>Chocolate</td>
-    <td>500</td>
-   
-  </tr>
-  <tr>
-    <td>hot chocolate</td>
-    <td>200</td>
-  </tr>
-  <tr>
-    <td>Vanilla</td>
-    <td>200</td>
-</tr>
-  <tr>
-    <td>hot chocolate</td>
-    <td>350</td>
-  </tr>
-  <tr>
-    <td>hot chocolate</td>
-    <td>450</td>
-   
-  </tr>
+<header>
+    <h1>Welcome to Our Cafe</h1>
+    <p>Delicious Food, Fresh Drinks and Happy Moments!</p>
+</header>
 
-</table>
-<button onclick="OrderConfirm()">OrderConfirm</button>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="famous.html">Famous Items</a>
+    <a href="contact.html">Contact & Booking</a>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <h2>Welcome to Our Cafe!</h2>
+        <p>
+            Enjoy delicious food, tasty desserts and refreshing drinks
+            in a comfortable and friendly environment.
+        </p>
+        <p>
+            We are happy to serve you. Explore our menu and discover
+            your favourite items!
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Our Cafe Menu</h2>
+        <table>
+            <tr>
+                <th>Menu Items</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Chocolate Cake</td>
+                <td>Rs. 500</td>
+            </tr>
+            <tr>
+                <td>Hot Chocolate</td>
+                <td>Rs. 200</td>
+            </tr>
+            <tr>
+                <td>Vanilla Special</td>
+                <td>Rs. 200</td>
+            </tr>
+            <tr>
+                <td>Chocolate Shake</td>
+                <td>Rs. 350</td>
+            </tr>
+            <tr>
+                <td>Special Coffee</td>
+                <td>Rs. 450</td>
+            </tr>
+        </table>
+
+        <button onclick="orderConfirm()">Order Now</button>
+    </div>
+</div>
+
+<footer>
+    <p>Thank you for visiting our cafe!</p>
+</footer>
 
 <script>
-  function OrderConfirm() {
-    console.log("Order Confirm button was clicked");
-    window.alert("Order confirmed");
-  }
+function orderConfirm() {
+    console.log("Order button was clicked");
+    alert("Thank you! Your order has been received.");
+}
 </script>
 
 </body>
+</html>
 
